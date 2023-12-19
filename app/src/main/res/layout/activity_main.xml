@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEDEB"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Judul"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelBerat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/InputBerat"
+        app:layout_constraintBottom_toBottomOf="@id/inputBerat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inputBerat"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:hint="@string/NilaiDefaultAngka"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Judul" />
+
+    <TextView
+        android:id="@+id/labelJarak"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/InputJarak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelBerat" />
+
+    <EditText
+        android:id="@+id/inputJarak"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:hint="@string/NilaiDefaultAngka"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelJarak" />
+
+    <TextView
+        android:id="@+id/labelRating"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/InputRating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelJarak" />
+
+    <RadioGroup
+        android:id="@+id/inputRatingGroups"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:checkedButton="@+id/opsi1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelRating">
+
+
+        <RadioButton
+            android:id="@+id/opsi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/opsi2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/opsi3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/opsi4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelTip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/InputTip"
+        app:layout_constraintBottom_toBottomOf="@id/inputTip"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/inputTip"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputRatingGroups" />
+
+    <Button
+        android:id="@+id/buttonHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/buttonHitung"
+        app:layout_constraintTop_toBottomOf="@+id/inputTip" />
+
+    <TextView
+        android:id="@+id/juduljmlongkir"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/jmlOngkir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHitung" />
+
+    <TextView
+        android:id="@+id/jmlongkir"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="-40dp"
+        android:hint="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHitung" />
+
+    <TextView
+        android:id="@+id/juduljmlTip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Jumlah Tip Yang Di Berikan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/juduljmlongkir" />
+
+    <TextView
+        android:id="@+id/jmlTip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="-40dp"
+        android:hint="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jmlongkir" />
+
+    <TextView
+        android:id="@+id/juduljmlTotal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Jumlah Ongkos Kirim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/juduljmlTip" />
+
+    <TextView
+        android:id="@+id/jmlTotal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="-40dp"
+        android:hint="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jmlTip" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

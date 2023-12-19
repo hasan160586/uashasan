@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">uashasan</string>
+
+    <string name="Judul">Menghitung Ongkos Kirim Ojek</string>
+    <string name="InputBerat">Masukan Berat Barang ( dalam Kg )</string>
+    <string name="InputJarak">Masukan Jarak Pengiriman (dalam Km )</string>
+    <string name="InputRating">Bagaimana Pelayananya ?</string>
+    <string name="InputTip">Ingin Memberikan Tip Kepada Driver ?</string>
+    <string name="jmlOngkir">Jumlah Ongkos Kirim</string>
+    <string name="jmlTip">Jumlah Tip yang di berikan</string>
+    <string name="total">Jumlah Uang Yang Harus Di Bayarkan ( Rp )</string>
+    <string name="NilaiDefaultAngka">0</string>
+    <string name="buttonHitung">Hitung Ongkos Kirim</string>
+    <string name="buttonGantiGambar">Ganti Gambar Random</string>
+
+    <string name="buttonPindahHalamanListFilm">Pindah Ke Halaman List Film</string>
+
+
+</resources>
